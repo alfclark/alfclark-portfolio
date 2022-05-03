@@ -1,24 +1,17 @@
-# alf-clark
+# Personal Portfolio Page
 
-## Project setup
-```
-npm install
-```
+[Live Preview](http://www.alfclark.dev)
 
-### Compiles and hot-reloads for development
+## DESC
+
 ```
-npm run serve
+This is a recovered version from outdated. Fixed and deployed.
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### Technologies
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- VUE
+- JS
+- HTML
+- CSS
+- Bootstrap
