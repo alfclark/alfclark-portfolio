@@ -9,43 +9,61 @@
       </h1>
       <div class="skills-wrapper">
         <img
-          src="@/assets/icons8-javascript.svg"
+          src="@/assets/javascript.svg"
           alt=""
           loading="lazy"
           class="icon icon-card"
         />
         <img
-          src="@/assets/icons8-html-5.svg"
+          src="@/assets/html5.svg"
           alt=""
           loading="lazy"
           class="icon icon-card"
         />
         <img
-          src="@/assets/icons8-css3.svg"
+          src="@/assets/css3.svg"
           alt=""
           loading="lazy"
           class="icon icon-card"
         />
         <img
-          src="@/assets/icons8-vue.svg"
+          src="@/assets/vue.svg"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <!--         <img
+          src="@/assets/python.svg"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        /> -->
+        <img
+          src="@/assets/git.svg"
           alt=""
           loading="lazy"
           class="icon icon-card"
         />
         <img
-          src="@/assets/icons8-python.svg"
+          src="@/assets/bootstrap.svg"
           alt=""
           loading="lazy"
           class="icon icon-card"
         />
         <img
-          src="@/assets/icons8-git.svg"
+          src="@/assets/figma.svg"
           alt=""
           loading="lazy"
           class="icon icon-card"
         />
         <img
-          src="@/assets/icons8-bootstrap.svg"
+          src="@/assets/adobe_xd.svg"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="@/assets/photoshop.svg"
           alt=""
           loading="lazy"
           class="icon icon-card"
@@ -55,9 +73,7 @@
   </section>
 </template>
 
-<script>
-export default {};
-</script>
+<script></script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
