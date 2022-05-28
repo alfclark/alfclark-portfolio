@@ -95,9 +95,7 @@
               :class="onSelection"
             />
             <div class="links" :class="isShown">
-              <a
-                class="link"
-                href="https://app.netlify.com/sites/oceanum/overview"
+              <a class="link" href="https://oceanum.netlify.app/"
                 ><i class="fa-solid fa-up-right-from-square"></i
               ></a>
               |
