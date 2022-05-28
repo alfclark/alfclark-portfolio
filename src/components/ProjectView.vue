@@ -90,22 +90,26 @@
           <div class="img">
             <img
               class="project-image"
-              src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
+              src="@/assets/projects/Oceanum.png"
               alt="project"
               :class="onSelection"
             />
             <div class="links" :class="isShown">
-              <a class="link" href=""
+              <a
+                class="link"
+                href="https://app.netlify.com/sites/oceanum/overview"
                 ><i class="fa-solid fa-up-right-from-square"></i
               ></a>
               |
-              <a class="link" href=""><i class="fa-brands fa-github"></i></a>
+              <a class="link" href="https://github.com/alfclark/oceanum"
+                ><i class="fa-brands fa-github"></i
+              ></a>
             </div>
           </div>
           <div class="card-title">
             <p class="project-title">
               <span class="code">&lt;</span>
-              Rock, Paper, Scissors
+              Microsoft LaunchX Project
               <span class="code">&#47;&gt;</span>
             </p>
             <div class="technologies">
