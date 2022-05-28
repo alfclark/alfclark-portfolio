@@ -113,6 +113,7 @@
               <span class="code">&#47;&gt;</span>
             </p>
             <div class="technologies">
+              <i class="fa-brands fa-vuejs"></i>
               <i class="fa-brands fa-css3-alt"></i>
               <i class="fa-brands fa-html5"></i>
               <i class="fa-brands fa-js"></i>
