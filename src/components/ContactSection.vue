@@ -15,7 +15,7 @@
         ref="anyName"
         @submit="submitForm"
         autocomplete="off"
-        action="https://formsubmit.co/9144a6a93c855ef6560bfe2b18cdbc55"
+        action="https://formsubmit.co/alfredoclarkcardenas@gmail.com"
         method="POST"
       >
         <!-- Configs -->
