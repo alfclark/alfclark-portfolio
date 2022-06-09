@@ -1,9 +1,20 @@
 <template>
-  <div
-    class="font-head text-center py-3 px-1 bg-red-lighter text-red-darker text-sm font-light"
-  >
-    <p>🏗 Site is currently under construction 🏗</p>
+  <div class="alert">
+    <p class="message">🏗 Site is currently under construction 🏗</p>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.alert {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+}
+
+.message {
+  margin: 0;
+  color: brown;
+}
+</style>
