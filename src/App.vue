@@ -1,4 +1,5 @@
 <template>
+  <UnderConstruction />
   <NavBar />
   <LandingScreen />
   <AboutMe />
@@ -18,6 +19,7 @@ import ProjectView from "./components/ProjectView.vue";
 import FooterView from "./components/FooterView.vue";
 import GoTop from "./components/GoTop.vue";
 import ContactSection from "./components/ContactSection.vue";
+import UnderConstruction from "./components/UnderConstruction.vue";
 
 export default {
   name: "App",
@@ -30,6 +32,7 @@ export default {
     GoTop,
     ContactSection,
     ProjectView,
+    UnderConstruction,
   },
 };
 </script>
