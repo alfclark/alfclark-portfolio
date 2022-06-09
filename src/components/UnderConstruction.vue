@@ -11,6 +11,7 @@
   justify-content: center;
   align-items: center;
   background-color: bisque;
+  border-radius: 0;
 }
 
 .message {
