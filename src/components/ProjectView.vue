@@ -20,11 +20,11 @@
               :class="onSelection"
             />
             <div class="links" :class="isShown">
-              <a class="link" href="https://alfclark-gamezone.netlify.app/"
+              <a class="link" target="blank" href="https://alfclark-gamezone.netlify.app/"
                 ><i class="fa-solid fa-up-right-from-square"></i
               ></a>
               |
-              <a class="link" href="https://github.com/alfclark/game-zone"
+              <a class="link" target="blank" href="https://github.com/alfclark/game-zone"
                 ><i class="fa-brands fa-github"></i
               ></a>
             </div>
@@ -57,11 +57,11 @@
               :class="onSelection"
             />
             <div class="links" :class="isShown">
-              <a class="link" href="https://beautiful-elf-1f56ad.netlify.app/"
+              <a class="link" target="blank" href="https://beautiful-elf-1f56ad.netlify.app/"
                 ><i class="fa-solid fa-up-right-from-square"></i
               ></a>
               |
-              <a class="link" href="https://github.com/alfclark/Etch-a-Sketch"
+              <a class="link" target="blank" href="https://github.com/alfclark/Etch-a-Sketch"
                 ><i class="fa-brands fa-github"></i
               ></a>
             </div>
@@ -93,12 +93,12 @@
               :class="onSelection"
             />
             <div class="links" :class="isShown">
-              <a class="link" href="https://alura-challenge1.netlify.app/"
+              <a class="link" target="blank" href="https://alura-challenge1.netlify.app/"
                 ><i class="fa-solid fa-up-right-from-square"></i
               ></a>
               |
               <a
-                class="link"
+                class="link" target="blank"
                 href="https://github.com/alfclark/alura-challenge1"
                 ><i class="fa-brands fa-github"></i
               ></a>
@@ -131,11 +131,11 @@
               :class="onSelection"
             />
             <div class="links" :class="isShown">
-              <a class="link" href="https://oceanum.netlify.app/"
+              <a class="link" target="blank" href="https://oceanum.netlify.app/"
                 ><i class="fa-solid fa-up-right-from-square"></i
               ></a>
               |
-              <a class="link" href="https://github.com/alfclark/oceanum"
+              <a class="link" target="blank" href="https://github.com/alfclark/oceanum"
                 ><i class="fa-brands fa-github"></i
               ></a>
             </div>
