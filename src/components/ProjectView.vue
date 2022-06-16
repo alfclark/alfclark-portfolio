@@ -52,6 +52,42 @@
           <div class="img">
             <img
               class="project-image"
+              src="@/assets/projects/etchASketch.png"
+              alt="project"
+              :class="onSelection"
+            />
+            <div class="links" :class="isShown">
+              <a class="link" href="https://beautiful-elf-1f56ad.netlify.app/"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+              |
+              <a class="link" href="https://github.com/alfclark/Etch-a-Sketch"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <div class="card-title">
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              Etch-a-Sketch
+              <span class="code">&#47;&gt;</span>
+            </p>
+            <div class="technologies">
+              <i class="fa-brands fa-js"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-bootstrap"></i>
+            </div>
+          </div>
+        </div>
+        <div
+          class="project project-tile"
+          :class="cardSelected"
+          @click="selected"
+        >
+          <div class="img">
+            <img
+              class="project-image"
               src="@/assets/projects/encryptionPage.png"
               alt="project"
               :class="onSelection"
