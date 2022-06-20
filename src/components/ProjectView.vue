@@ -15,16 +15,66 @@
           <div class="img">
             <img
               class="project-image"
+              src="@/assets/projects/movieZone.png"
+              alt="project"
+              :class="onSelection"
+            />
+            <div class="links" :class="isShown">
+              <a
+                class="link"
+                target="blank"
+                href="https://is-the-movie-zone.netlify.app/"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+              |
+              <a
+                class="link"
+                target="blank"
+                href="https://github.com/alfclark/movie-app"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <div class="card-title">
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              Movie Zone
+              <span class="code">&#47;&gt;</span>
+            </p>
+            <div class="technologies">
+              <i class="fa-brands fa-vuejs"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-js"></i>
+              <i class="fa-brands fa-bootstrap"></i>
+              <i class="fa-brands">API</i>
+            </div>
+          </div>
+        </div>
+        <div
+          class="project project-tile"
+          :class="cardSelected"
+          @click="selected"
+        >
+          <div class="img">
+            <img
+              class="project-image"
               src="@/assets/projects/GameZone.png"
               alt="project"
               :class="onSelection"
             />
             <div class="links" :class="isShown">
-              <a class="link" target="blank" href="https://alfclark-gamezone.netlify.app/"
+              <a
+                class="link"
+                target="blank"
+                href="https://alfclark-gamezone.netlify.app/"
                 ><i class="fa-solid fa-up-right-from-square"></i
               ></a>
               |
-              <a class="link" target="blank" href="https://github.com/alfclark/game-zone"
+              <a
+                class="link"
+                target="blank"
+                href="https://github.com/alfclark/game-zone"
                 ><i class="fa-brands fa-github"></i
               ></a>
             </div>
@@ -57,11 +107,17 @@
               :class="onSelection"
             />
             <div class="links" :class="isShown">
-              <a class="link" target="blank" href="https://beautiful-elf-1f56ad.netlify.app/"
+              <a
+                class="link"
+                target="blank"
+                href="https://beautiful-elf-1f56ad.netlify.app/"
                 ><i class="fa-solid fa-up-right-from-square"></i
               ></a>
               |
-              <a class="link" target="blank" href="https://github.com/alfclark/Etch-a-Sketch"
+              <a
+                class="link"
+                target="blank"
+                href="https://github.com/alfclark/Etch-a-Sketch"
                 ><i class="fa-brands fa-github"></i
               ></a>
             </div>
@@ -93,12 +149,16 @@
               :class="onSelection"
             />
             <div class="links" :class="isShown">
-              <a class="link" target="blank" href="https://alura-challenge1.netlify.app/"
+              <a
+                class="link"
+                target="blank"
+                href="https://alura-challenge1.netlify.app/"
                 ><i class="fa-solid fa-up-right-from-square"></i
               ></a>
               |
               <a
-                class="link" target="blank"
+                class="link"
+                target="blank"
                 href="https://github.com/alfclark/alura-challenge1"
                 ><i class="fa-brands fa-github"></i
               ></a>
@@ -115,6 +175,7 @@
               <i class="fa-brands fa-css3-alt"></i>
               <i class="fa-brands fa-html5"></i>
               <i class="fa-brands fa-js"></i>
+              <i class="fa-brands">API</i>
             </div>
           </div>
         </div>
@@ -135,7 +196,10 @@
                 ><i class="fa-solid fa-up-right-from-square"></i
               ></a>
               |
-              <a class="link" target="blank" href="https://github.com/alfclark/oceanum"
+              <a
+                class="link"
+                target="blank"
+                href="https://github.com/alfclark/oceanum"
                 ><i class="fa-brands fa-github"></i
               ></a>
             </div>
@@ -278,12 +342,14 @@ export default {
   gap: 0.5rem;
   align-items: center;
   justify-content: center;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 .technologies .fa-brands {
   margin-top: 0.5rem;
   color: white;
   font-size: 1.3rem;
 }
+
 .project:hover .project-title {
   color: #ff7f50;
   text-decoration: underline;
