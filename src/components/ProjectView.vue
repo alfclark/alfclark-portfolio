@@ -349,7 +349,6 @@ export default {
   color: white;
   font-size: 1.3rem;
 }
-
 .project:hover .project-title {
   color: #ff7f50;
   text-decoration: underline;
