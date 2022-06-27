@@ -34,7 +34,9 @@
           target="_blank"
           ><i class="fa-brands fa-linkedin-in"></i
         ></a>
-        <a class="social-icon" href=""><i class="fa-solid fa-file"></i></a>
+        <a class="social-icon" href="@/assets/docs/Alfredo-Clark-Resume.pdf"
+          ><i class="fa-solid fa-file"></i
+        ></a>
         <a
           class="social-icon"
           href="https://codepen.io/alfclark"
