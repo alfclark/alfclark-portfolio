@@ -187,6 +187,48 @@
           <div class="img">
             <img
               class="project-image"
+              src="@/assets/projects/toDoList.png"
+              alt="project"
+              :class="onSelection"
+            />
+            <div class="links" :class="isShown">
+              <a
+                class="link"
+                target="blank"
+                href="https://teal-unicorn-7b0316.netlify.app/"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+              |
+              <a
+                class="link"
+                target="blank"
+                href="https://github.com/alfclark/todo-list-VueJS"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <div class="card-title">
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              To-Do List
+              <span class="code">&#47;&gt;</span>
+            </p>
+            <div class="technologies">
+              <i class="fa-brands fa-vuejs"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-js"></i>
+            </div>
+          </div>
+        </div>
+        <div
+          class="project project-tile"
+          :class="cardSelected"
+          @click="selected"
+        >
+          <div class="img">
+            <img
+              class="project-image"
               src="@/assets/projects/Oceanum.png"
               alt="project"
               :class="onSelection"
