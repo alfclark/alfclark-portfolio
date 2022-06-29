@@ -21,6 +21,7 @@
           </p>
         </div>
       </div>
+      <h3 class="subtitle">My social:</h3>
       <div class="social">
         <a
           class="social-icon"
@@ -34,20 +35,17 @@
           target="_blank"
           ><i class="fa-brands fa-linkedin-in"></i
         ></a>
-        <a class="social-icon" href="Resume.pdf" target="_blank"
-          ><i class="fa-solid fa-file"></i
-        ></a>
         <a
           class="social-icon"
           href="https://codepen.io/alfclark"
           target="_blank"
           ><i class="fa-brands fa-codepen"></i
         ></a>
-        <a
-          class="social-icon"
-          href="mailto:alfredoclarkcardenas@gmail.com"
-          target="_blank"
+        <a class="social-icon" href="mailto:alfredoclarkcardenas@gmail.com"
           ><i class="fa-solid fa-envelope"></i
+        ></a>
+        <a class="social-icon" href="Resume.pdf" target="_blank"
+          ><i class="fa-solid fa-file"></i
         ></a>
       </div>
       <div class="funfact">
@@ -117,8 +115,12 @@ export default {
   margin: 1rem;
 }
 
+.subtitle {
+  margin: 1rem 0 0.5rem 0;
+  text-decoration: underline;
+}
+
 .social {
-  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
