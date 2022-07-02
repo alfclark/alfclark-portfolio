@@ -15,6 +15,49 @@
           <div class="img">
             <img
               class="project-image"
+              src="@/assets/projects/GeekCave.png"
+              alt="project"
+              :class="onSelection"
+            />
+            <div class="links" :class="isShown">
+              <a
+                class="link"
+                target="blank"
+                href="https://vueecommerce-site.netlify.app/"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+              |
+              <a
+                class="link"
+                target="blank"
+                href="https://github.com/alfclark/ecommerce-site"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <div class="card-title">
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              E-Commerce Site Mock
+              <span class="code">&#47;&gt;</span>
+            </p>
+            <div class="technologies">
+              <i class="fa-brands fa-vuejs"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-js"></i>
+              <i class="fa-brands fa-bootstrap"></i>
+            </div>
+          </div>
+        </div>
+        <div
+          class="project project-tile"
+          :class="cardSelected"
+          @click="selected"
+        >
+          <div class="img">
+            <img
+              class="project-image"
               src="@/assets/projects/movieZone.png"
               alt="project"
               :class="onSelection"
@@ -211,45 +254,6 @@
             <p class="project-title">
               <span class="code">&lt;</span>
               To-Do List
-              <span class="code">&#47;&gt;</span>
-            </p>
-            <div class="technologies">
-              <i class="fa-brands fa-vuejs"></i>
-              <i class="fa-brands fa-css3-alt"></i>
-              <i class="fa-brands fa-html5"></i>
-              <i class="fa-brands fa-js"></i>
-            </div>
-          </div>
-        </div>
-        <div
-          class="project project-tile"
-          :class="cardSelected"
-          @click="selected"
-        >
-          <div class="img">
-            <img
-              class="project-image"
-              src="@/assets/projects/Oceanum.png"
-              alt="project"
-              :class="onSelection"
-            />
-            <div class="links" :class="isShown">
-              <a class="link" target="blank" href="https://oceanum.netlify.app/"
-                ><i class="fa-solid fa-up-right-from-square"></i
-              ></a>
-              |
-              <a
-                class="link"
-                target="blank"
-                href="https://github.com/alfclark/oceanum"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-            </div>
-          </div>
-          <div class="card-title">
-            <p class="project-title">
-              <span class="code">&lt;</span>
-              Microsoft LaunchX Project
               <span class="code">&#47;&gt;</span>
             </p>
             <div class="technologies">
