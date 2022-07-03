@@ -38,7 +38,7 @@
           <div class="card-title">
             <p class="project-title">
               <span class="code">&lt;</span>
-              E-Commerce Site Mock
+              E-Commerce Website
               <span class="code">&#47;&gt;</span>
             </p>
             <div class="technologies">
