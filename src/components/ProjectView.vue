@@ -70,7 +70,7 @@ export default {
         {
           id: 0,
           name: "E-Commerce Website",
-          img: "img/GeekCave.ea3def89.png",
+          img: "/projects/GeekCave.png",
           state: false,
           cardStatus: "",
           imgStatus: "",
@@ -81,7 +81,7 @@ export default {
         {
           id: 1,
           name: "MovieZone",
-          img: "img/movieZone.33b6bcd4.png",
+          img: "/projects/movieZone.png",
           state: false,
           cardStatus: "",
           imgStatus: "",
@@ -93,7 +93,7 @@ export default {
         {
           id: 2,
           name: "GameZone",
-          img: "img/GameZone.1ea9af05.png",
+          img: "/projects/GameZone.png",
           state: false,
           cardStatus: "",
           imgStatus: "",
@@ -104,7 +104,7 @@ export default {
         {
           id: 3,
           name: "Etch-a-Sketch",
-          img: "img/etchASketch.46d6ee3f.png",
+          img: "/projects/etchASketch.png",
           state: false,
           cardStatus: "",
           imgStatus: "",
@@ -115,7 +115,7 @@ export default {
         {
           id: 4,
           name: "Text Encryption",
-          img: "img/encryptionPage.8e1fe3fe.png",
+          img: "/projects/encryptionPage.png",
           state: false,
           cardStatus: "",
           imgStatus: "",
@@ -127,7 +127,7 @@ export default {
         {
           id: 5,
           name: "To-Do List",
-          img: "img/toDoList.01f5b37c.png",
+          img: "/projects/toDoList.png",
           state: false,
           cardStatus: "",
           imgStatus: "",
