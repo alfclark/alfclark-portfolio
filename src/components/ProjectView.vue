@@ -24,11 +24,11 @@
             />
             <div class="links" :class="project.linkStatus">
               <a class="link" target="blank" :href="project.live"
-                ><i class="fa-solid fa-up-right-from-square"></i
+                ><i class="fa-solid fa-up-right-from-square _link"></i
               ></a>
               |
               <a class="link" target="blank" :href="project.git"
-                ><i class="fa-brands fa-github"></i
+                ><i class="fa-brands fa-github _link"></i
               ></a>
             </div>
           </div>
@@ -312,6 +312,9 @@ export default {
   }
   .technologies .fa-brands {
     font-size: 0.7rem;
+  }
+  ._link {
+    font-size: 1.3rem;
   }
 }
 </style>
