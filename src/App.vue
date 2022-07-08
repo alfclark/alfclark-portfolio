@@ -38,6 +38,7 @@ export default {
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 /* CUSTOM SCROLLBAR */
 ::-webkit-scrollbar-track {
   background-color: #141c3a1a;
@@ -151,8 +152,8 @@ export default {
   }
 }
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  color: white;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.897);
   text-align: center;
   background: 50% / contain url(@/assets/universe.png) var(--dark);
 }
