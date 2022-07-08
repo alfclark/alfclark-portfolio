@@ -32,7 +32,7 @@ export default {
 .by_me {
   text-align: center;
   color: rgba(255, 255, 255, 0.863);
-  font-weight: 500;
+  font-weight: 300;
   font-size: 1rem;
   padding-top: 3rem;
   padding-bottom: 1rem;
