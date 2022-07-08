@@ -1,36 +1,33 @@
 <template>
   <div style="margin-top: -80px; position: absolute" id="projects"></div>
   <section class="container">
+    <h1 class="subtitle">
+      My Recent Projects
+      <hr class="divider" />
+    </h1>
     <div class="projects">
-      <h1 class="subtitle">
-        My Recent Projects
-        <hr class="divider" />
-      </h1>
       <div class="projects-wrapper">
         <div
           class="project project-tile"
-          :class="cardSelected"
-          @click="selected"
+          :class="project.cardStatus"
+          v-for="project in projects"
+          :key="project.id"
+          @click="toggle(project)"
         >
+          <!-- Project Image -->
           <div class="img">
             <img
               class="project-image"
-              src="@/assets/projects/GeekCave.png"
-              alt="project"
-              :class="onSelection"
+              :class="project.imgStatus"
+              :src="project.img"
+              :alt="project.name"
             />
-            <div class="links" :class="isShown">
-              <a
-                class="link"
-                target="blank"
-                href="https://vueecommerce-site.netlify.app/"
+            <div class="links" :class="project.linkStatus">
+              <a class="link" target="blank" :href="project.live"
                 ><i class="fa-solid fa-up-right-from-square"></i
               ></a>
               |
-              <a
-                class="link"
-                target="blank"
-                href="https://github.com/alfclark/ecommerce-site"
+              <a class="link" target="blank" :href="project.git"
                 ><i class="fa-brands fa-github"></i
               ></a>
             </div>
@@ -38,232 +35,21 @@
           <div class="card-title">
             <p class="project-title">
               <span class="code">&lt;</span>
-              E-Commerce Website
+              {{ project.name }}
               <span class="code">&#47;&gt;</span>
             </p>
             <div class="technologies">
-              <i class="fa-brands fa-vuejs"></i>
-              <i class="fa-brands fa-css3-alt"></i>
-              <i class="fa-brands fa-html5"></i>
-              <i class="fa-brands fa-js"></i>
-              <i class="fa-brands fa-bootstrap"></i>
+              <i
+                class="fa-brands"
+                v-for="technology in technologies"
+                :key="technology.id"
+                :class="technology.code"
+              ></i>
+              <i class="fa-brands api">{{ project.api }}</i>
             </div>
           </div>
         </div>
-        <div
-          class="project project-tile"
-          :class="cardSelected"
-          @click="selected"
-        >
-          <div class="img">
-            <img
-              class="project-image"
-              src="@/assets/projects/movieZone.png"
-              alt="project"
-              :class="onSelection"
-            />
-            <div class="links" :class="isShown">
-              <a
-                class="link"
-                target="blank"
-                href="https://is-the-movie-zone.netlify.app/"
-                ><i class="fa-solid fa-up-right-from-square"></i
-              ></a>
-              |
-              <a
-                class="link"
-                target="blank"
-                href="https://github.com/alfclark/movie-app"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-            </div>
-          </div>
-          <div class="card-title">
-            <p class="project-title">
-              <span class="code">&lt;</span>
-              Movie Zone
-              <span class="code">&#47;&gt;</span>
-            </p>
-            <div class="technologies">
-              <i class="fa-brands fa-vuejs"></i>
-              <i class="fa-brands fa-css3-alt"></i>
-              <i class="fa-brands fa-html5"></i>
-              <i class="fa-brands fa-js"></i>
-              <i class="fa-brands fa-bootstrap"></i>
-              <i class="fa-brands">API</i>
-            </div>
-          </div>
-        </div>
-        <div
-          class="project project-tile"
-          :class="cardSelected"
-          @click="selected"
-        >
-          <div class="img">
-            <img
-              class="project-image"
-              src="@/assets/projects/GameZone.png"
-              alt="project"
-              :class="onSelection"
-            />
-            <div class="links" :class="isShown">
-              <a
-                class="link"
-                target="blank"
-                href="https://alfclark-gamezone.netlify.app/"
-                ><i class="fa-solid fa-up-right-from-square"></i
-              ></a>
-              |
-              <a
-                class="link"
-                target="blank"
-                href="https://github.com/alfclark/game-zone"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-            </div>
-          </div>
-          <div class="card-title">
-            <p class="project-title">
-              <span class="code">&lt;</span>
-              Game Zone
-              <span class="code">&#47;&gt;</span>
-            </p>
-            <div class="technologies">
-              <i class="fa-brands fa-vuejs"></i>
-              <i class="fa-brands fa-css3-alt"></i>
-              <i class="fa-brands fa-html5"></i>
-              <i class="fa-brands fa-js"></i>
-              <i class="fa-brands fa-bootstrap"></i>
-            </div>
-          </div>
-        </div>
-        <div
-          class="project project-tile"
-          :class="cardSelected"
-          @click="selected"
-        >
-          <div class="img">
-            <img
-              class="project-image"
-              src="@/assets/projects/etchASketch.png"
-              alt="project"
-              :class="onSelection"
-            />
-            <div class="links" :class="isShown">
-              <a
-                class="link"
-                target="blank"
-                href="https://beautiful-elf-1f56ad.netlify.app/"
-                ><i class="fa-solid fa-up-right-from-square"></i
-              ></a>
-              |
-              <a
-                class="link"
-                target="blank"
-                href="https://github.com/alfclark/Etch-a-Sketch"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-            </div>
-          </div>
-          <div class="card-title">
-            <p class="project-title">
-              <span class="code">&lt;</span>
-              Etch-a-Sketch
-              <span class="code">&#47;&gt;</span>
-            </p>
-            <div class="technologies">
-              <i class="fa-brands fa-js"></i>
-              <i class="fa-brands fa-css3-alt"></i>
-              <i class="fa-brands fa-html5"></i>
-              <i class="fa-brands fa-bootstrap"></i>
-            </div>
-          </div>
-        </div>
-        <div
-          class="project project-tile"
-          :class="cardSelected"
-          @click="selected"
-        >
-          <div class="img">
-            <img
-              class="project-image"
-              src="@/assets/projects/encryptionPage.png"
-              alt="project"
-              :class="onSelection"
-            />
-            <div class="links" :class="isShown">
-              <a
-                class="link"
-                target="blank"
-                href="https://alura-challenge1.netlify.app/"
-                ><i class="fa-solid fa-up-right-from-square"></i
-              ></a>
-              |
-              <a
-                class="link"
-                target="blank"
-                href="https://github.com/alfclark/alura-challenge1"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-            </div>
-          </div>
-          <div class="card-title">
-            <p class="project-title">
-              <span class="code">&lt;</span>
-              Text Encryptor
-              <span class="code">&#47;&gt;</span>
-            </p>
-            <div class="technologies">
-              <i class="fa-brands fa-vuejs"></i>
-              <i class="fa-brands fa-css3-alt"></i>
-              <i class="fa-brands fa-html5"></i>
-              <i class="fa-brands fa-js"></i>
-              <i class="fa-brands">API</i>
-            </div>
-          </div>
-        </div>
-        <div
-          class="project project-tile"
-          :class="cardSelected"
-          @click="selected"
-        >
-          <div class="img">
-            <img
-              class="project-image"
-              src="@/assets/projects/toDoList.png"
-              alt="project"
-              :class="onSelection"
-            />
-            <div class="links" :class="isShown">
-              <a
-                class="link"
-                target="blank"
-                href="https://teal-unicorn-7b0316.netlify.app/"
-                ><i class="fa-solid fa-up-right-from-square"></i
-              ></a>
-              |
-              <a
-                class="link"
-                target="blank"
-                href="https://github.com/alfclark/todo-list-VueJS"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-            </div>
-          </div>
-          <div class="card-title">
-            <p class="project-title">
-              <span class="code">&lt;</span>
-              To-Do List
-              <span class="code">&#47;&gt;</span>
-            </p>
-            <div class="technologies">
-              <i class="fa-brands fa-vuejs"></i>
-              <i class="fa-brands fa-css3-alt"></i>
-              <i class="fa-brands fa-html5"></i>
-              <i class="fa-brands fa-js"></i>
-            </div>
-          </div>
-        </div>
+        <!-- Recycle -->
       </div>
     </div>
   </section>
@@ -271,34 +57,127 @@
 
 <script>
 export default {
-  methods: {
-    selected() {
-      const cardStatus = "selected";
-      const imgStatus = "isSelected";
-      const linkStatus = "isShown";
-      if (this.cardSelected === "") {
-        this.cardSelected = cardStatus;
-        this.onSelection = imgStatus;
-        this.isShown = linkStatus;
-      } else {
-        this.cardSelected = "";
-        this.onSelection = "";
-        this.isShown = "";
-      }
-    },
-  },
   data() {
     return {
-      cardSelected: "",
-      onSelection: "",
-      isShown: "",
+      technologies: [
+        { id: 0, name: "vue", code: "fa-brands fa-vuejs" },
+        { id: 1, name: "js", code: "fa-brands fa-js" },
+        { id: 2, name: "html", code: "fa-html5" },
+        { id: 3, name: "css", code: "fa-brands fa-css3-alt" },
+        { id: 4, name: "bootstrap", code: "fa-brands fa-bootstrap" },
+      ],
+      projects: [
+        {
+          id: 0,
+          name: "E-Commerce Website",
+          img: "img/GeekCave.ea3def89.png",
+          state: false,
+          cardStatus: "",
+          imgStatus: "",
+          linkStatus: "",
+          git: "https://github.com/alfclark/ecommerce-site",
+          live: "https://vueecommerce-site.netlify.app/",
+        },
+        {
+          id: 1,
+          name: "MovieZone",
+          img: "img/movieZone.33b6bcd4.png",
+          state: false,
+          cardStatus: "",
+          imgStatus: "",
+          linkStatus: "",
+          git: "https://github.com/alfclark/movie-app",
+          live: "https://is-the-movie-zone.netlify.app/",
+          api: "API",
+        },
+        {
+          id: 2,
+          name: "GameZone",
+          img: "img/GameZone.1ea9af05.png",
+          state: false,
+          cardStatus: "",
+          imgStatus: "",
+          linkStatus: "",
+          git: "https://github.com/alfclark/game-zone",
+          live: "https://alfclark-gamezone.netlify.app/",
+        },
+        {
+          id: 3,
+          name: "Etch-a-Sketch",
+          img: "img/etchASketch.46d6ee3f.png",
+          state: false,
+          cardStatus: "",
+          imgStatus: "",
+          linkStatus: "",
+          git: "https://github.com/alfclark/Etch-a-Sketch",
+          live: "https://beautiful-elf-1f56ad.netlify.app/",
+        },
+        {
+          id: 4,
+          name: "Text Encryption",
+          img: "img/encryptionPage.8e1fe3fe.png",
+          state: false,
+          cardStatus: "",
+          imgStatus: "",
+          linkStatus: "",
+          git: "https://github.com/alfclark/alura-challenge1",
+          live: "https://alura-challenge1.netlify.app/",
+          api: "API",
+        },
+        {
+          id: 5,
+          name: "To-Do List",
+          img: "img/toDoList.01f5b37c.png",
+          state: false,
+          cardStatus: "",
+          imgStatus: "",
+          linkStatus: "",
+          git: "https://github.com/alfclark/todo-list-VueJS",
+          live: "https://teal-unicorn-7b0316.netlify.app/",
+        },
+      ],
     };
+  },
+  methods: {
+    toggle(project) {
+      project.state = !project.state;
+      if (project.state === true) {
+        project.cardStatus = "cardSelected";
+        project.imgStatus = "imgSelected";
+        project.linkStatus = "linkShow";
+      } else {
+        project.cardStatus = "";
+        project.imgStatus = "";
+        project.linkStatus = "";
+      }
+    },
   },
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.container {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+.projects {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.projects-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+}
 .container {
   width: 90vw;
   display: flex;
@@ -402,14 +281,17 @@ export default {
 .project:hover .technologies .fa-brands {
   color: #ff7f50;
 }
-.selected {
+.api {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+.cardSelected {
   transform: scale(1.05);
 }
-.isSelected {
+.imgSelected {
   opacity: 30%;
   transition: 0.4s;
 }
-.isShown {
+.linkShow {
   display: flex;
   transition: 0.4s;
 }
