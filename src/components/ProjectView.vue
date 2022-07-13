@@ -239,10 +239,10 @@ export default {
 }
 .link {
   color: white;
+  transition: 0.4s;
 }
 .link:hover {
   color: var(--dark);
-  transition: 0.4s;
 }
 .card-title {
   margin-top: -1.2rem;

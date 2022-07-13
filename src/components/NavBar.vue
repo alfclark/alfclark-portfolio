@@ -60,6 +60,7 @@ export default {
   font-weight: 500;
   font-size: 1.2rem;
   margin: 0 0.5rem;
+  transition: 0.5s;
 }
 .nav-link:hover {
   text-decoration: underline;
@@ -73,9 +74,9 @@ export default {
   border: none;
   border: solid;
   border-radius: 2.2rem;
+  transition: 0.5s;
 }
 .nav-button:hover {
   background-color: #141c3a;
-  transition: 0.4s;
 }
 </style>

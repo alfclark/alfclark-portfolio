@@ -154,11 +154,11 @@ select {
   color: white;
   border: solid var(--purple);
   border-radius: 2rem;
+  transition: 0.4s;
 }
 .button:hover {
   background-color: var(--purple);
   color: white;
-  transition: 0.4s;
 }
 .sent {
   margin: 1rem 0;

@@ -109,6 +109,7 @@
   border-radius: 11px;
   box-shadow: 0 10px 10px #783ad6;
   margin: 1rem;
+  transition: 0.5s;
 }
 .icon-card:hover {
   animation: shake1 2s ease 0s 1 normal forwards;

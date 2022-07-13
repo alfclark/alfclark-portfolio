@@ -30,10 +30,10 @@ export default {
   background-color: var(--purple);
   padding: 0.3rem 0.5rem;
   border-radius: 50%;
+  transition: 0.4s;
 }
 .fa-arrow-up:hover {
   background-color: var(--dark);
-  transition: 0.4s;
 }
 @media screen and (max-width: 900px) {
   .fa-arrow-up {

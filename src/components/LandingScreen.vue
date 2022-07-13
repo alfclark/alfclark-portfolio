@@ -49,6 +49,7 @@ export default {
 }
 .avatar {
   width: 20%;
+  transition: 0.4s;
 }
 .avatar:hover {
   animation: shake1 2s ease 0s 1 normal forwards;
