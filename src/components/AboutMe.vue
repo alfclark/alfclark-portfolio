@@ -51,7 +51,7 @@
       <div class="funfact">
         <h2>Want to know more about me?</h2>
         <button class="factButton" @click="generateFact">Tell me</button>
-        <p class="fact">{{ fact }}</p>
+        <p class="fact" :class="show">{{ fact }}</p>
       </div>
     </div>
   </section>
@@ -63,17 +63,22 @@ export default {
     generateFact() {
       const numSelect = Math.floor(Math.random() * this.facts.length);
       this.fact = this.facts[numSelect];
+      this.show = "show";
+      setTimeout(() => {
+        this.show = "hidden";
+      }, 2000);
     },
   },
   data() {
     return {
-      fact: "",
+      show: "hidden",
+      fact: "hello",
       facts: [
         "🐉 I lived 2 years in China 🐉",
         "🎹 I play 6 instruments 🎹",
         "👽 I am a big Star Wars fan 👽",
         "🚗 I used to work for a Car Maker 🚗",
-        "💼 I used to have a small trade company 💼",
+        "💼 I used to own a small trade company 💼",
         "⚽ I have played soccer for more than 15 years ⚽",
         "🐾 I have 2 dogs 🐾",
         "🥡 My chinese name is 马超 🥡",
@@ -81,6 +86,7 @@ export default {
         "🤖 I am a Mechatronics Engineer 🤖",
         "🚀 My favourite videogame is Rocket League 🚀",
         "🤓 I won a full scholarship for post-graduate studies in China 🤓",
+        "🪆 I speak a little russian 🪆",
       ],
     };
   },
@@ -128,11 +134,11 @@ export default {
   padding: 1rem;
   font-size: 2rem;
   color: #fff;
+  transition: 0.6s;
 }
 
 .social-icon:hover {
   color: #141c3a;
-  transition: 0.4s;
 }
 .funfact {
   background-color: rgba(255, 255, 255, 0.813);
@@ -151,32 +157,23 @@ export default {
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 1.5rem;
+  transition: 0.4s;
   margin: 0.5rem;
 }
 .factButton:hover {
   background-color: var(--dark);
   color: white;
-  transition: 0.4s;
 }
 .fact {
   font-size: 1.5rem;
   color: var(--dark);
 }
-@media screen and (max-width: 900px) {
-  .sub-about {
-    font-size: 2rem;
-  }
-  .about-text {
-    font-size: 1rem;
-  }
-  .social-icon {
-    font-size: 1.5rem;
-  }
-  .funfact h2 {
-    font-size: 1.5rem;
-  }
-  .fact {
-    font-size: 1rem;
-  }
+.hidden {
+  opacity: 0;
+  transition: 0.7s;
+}
+.show {
+  opacity: 1;
+  transition: 0.7s;
 }
 </style>
