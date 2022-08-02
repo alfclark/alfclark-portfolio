@@ -76,7 +76,7 @@ export default {
           imgStatus: "",
           linkStatus: "",
           git: "https://github.com/alfclark/practica-sps",
-          live: "https://graceful-moonbeam-57555d.netlify.app/",
+          live: "https://recruitment-management.netlify.app",
           api: "API",
         },
         {
