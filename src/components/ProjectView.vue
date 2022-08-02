@@ -69,6 +69,18 @@ export default {
       projects: [
         {
           id: 0,
+          name: "Recruitment CRUD List",
+          img: "/projects/CRUDRecruitment.png",
+          state: false,
+          cardStatus: "",
+          imgStatus: "",
+          linkStatus: "",
+          git: "https://github.com/alfclark/practica-sps",
+          live: "https://graceful-moonbeam-57555d.netlify.app/",
+          api: "API",
+        },
+        {
+          id: 1,
           name: "E-Commerce Website",
           img: "/projects/GeekCave.png",
           state: false,
@@ -79,7 +91,7 @@ export default {
           live: "https://vueecommerce-site.netlify.app/",
         },
         {
-          id: 1,
+          id: 2,
           name: "MovieZone",
           img: "/projects/movieZone.png",
           state: false,
@@ -91,7 +103,7 @@ export default {
           api: "API",
         },
         {
-          id: 2,
+          id: 3,
           name: "GameZone",
           img: "/projects/GameZone.png",
           state: false,
@@ -102,7 +114,7 @@ export default {
           live: "https://alfclark-gamezone.netlify.app/",
         },
         {
-          id: 3,
+          id: 4,
           name: "Etch-a-Sketch",
           img: "/projects/etchASketch.png",
           state: false,
@@ -113,7 +125,7 @@ export default {
           live: "https://beautiful-elf-1f56ad.netlify.app/",
         },
         {
-          id: 4,
+          id: 5,
           name: "Text Encryption",
           img: "/projects/encryptionPage.png",
           state: false,
@@ -123,17 +135,6 @@ export default {
           git: "https://github.com/alfclark/alura-challenge1",
           live: "https://alura-challenge1.netlify.app/",
           api: "API",
-        },
-        {
-          id: 5,
-          name: "To-Do List",
-          img: "/projects/toDoList.png",
-          state: false,
-          cardStatus: "",
-          imgStatus: "",
-          linkStatus: "",
-          git: "https://github.com/alfclark/todo-list-VueJS",
-          live: "https://teal-unicorn-7b0316.netlify.app/",
         },
       ],
     };
