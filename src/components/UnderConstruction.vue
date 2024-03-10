@@ -1,6 +1,6 @@
 <template>
   <div class="alert">
-    <p class="message">🏗 Site is currently under construction 🏗</p>
+    <p class="message">🏗 You are seeing a deprecated version of my website, new site is under construction 🏗</p>
   </div>
 </template>
 
